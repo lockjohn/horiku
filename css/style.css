@@ -14,9 +14,29 @@ body {
 }
 
 ul {
+    /* remove bulletpoints on list items */
     list-style-type: none;
 }
 
 a {
+    /* remove underline on links */
     text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    /* 10 on top and bttm margins, zero on left/right */
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+
+}
+
+img {
+    /* set the image width so no matter size it won't spill out of it's container */
+    width: 100%;
 }
