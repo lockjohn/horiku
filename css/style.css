@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
 /* universal reset with '*' selector, border-box allows changes to padding/margin on elements without effecting the width */
 * {
     box-sizing: border-box;
@@ -39,4 +38,44 @@ p {
 img {
     /* set the image width so no matter size it won't spill out of it's container */
     width: 100%;
+}
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a  {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;    
+}
+
+/* generic utility class to add flexbox to elements */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
