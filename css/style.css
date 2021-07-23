@@ -38,7 +38,6 @@ h1, h2 {
 
 p {
     margin: 10px 0;
-
 }
 
 img {
@@ -78,7 +77,13 @@ img {
     color: white;
     position: relative;
 }
+.showcase h1 {
+    font-size: 40px;   
+}
 
+.showcase p {
+    margin: 20px 0;
+}
 /* Utilities */
 .container {
     max-width: 1100px;
