@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 /* universal reset with '*' selector, border-box allows changes to padding/margin on elements without effecting the width */
+
+/* defining a variable in the 'root' scope  */
+:root {
+    --primary-color: #047aed;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -40,8 +46,9 @@ img {
     width: 100%;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
 }
@@ -64,6 +71,10 @@ img {
     justify-content: space-between;
 }
 
+/* Showcase */
+
+
+/* Utilities */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -79,3 +90,4 @@ img {
     height: 100%;
 
 }
+
