@@ -92,12 +92,21 @@ img {
     padding: 0 40px;    
 }
 
-/* generic utility class to add flexbox to elements */
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+    /* the cross axis needs a height to center  therefore:*/
+    height: 100%;
+    /* now the grid element takes up 100% of container which has a height of 400px */
 }
 
