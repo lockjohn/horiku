@@ -88,6 +88,19 @@ img {
 .showcase .grid {
     grid-template-columns: 55% 45%;
     gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    /* to use the top feature needs to have a fixed position */
+    height: 350px; 
+    /* this causes the overflow of the form element from it's container, making a scroll bar appear, but we want it to spill over border so we change the showcase grid to overflow visible */
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;    
 }
 
 /* Utilities */
@@ -96,6 +109,15 @@ img {
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;    
+}
+
+.card {
+    color: #333;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
 }
 
 .flex {
