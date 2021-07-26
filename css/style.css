@@ -3,7 +3,8 @@
 
 /* defining a variable in the 'root' scope  */
 :root {
-    --primary-color: #047aed;
+    /* --primary-color: #047aed; */
+    --primary-color: #30385e;
 }
 
 * {
@@ -119,6 +120,22 @@ img {
 
 .showcase-form input:focus {
     outline: none;
+}
+
+.showcase::before, 
+.showcase::after {
+    content: 'this is where the content would go'; 
+    /* to use these pseudo classes, req this property, but leaving blank */
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: tan;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
 }
 
 /* Utilities */
