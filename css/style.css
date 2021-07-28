@@ -5,6 +5,10 @@
 :root {
     /* --primary-color: #047aed; */
     --primary-color: #30385e;
+    --secondary-color: #272e4d;
+    --dark-color: #161a2b;
+    --light-color: #c0c3ce;
+    --complementary-color: #5e5630;
 }
 
 * {
@@ -168,3 +172,8 @@ img {
      grid-row: 1 / span 2;
 }
 
+/* Cloud */
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
