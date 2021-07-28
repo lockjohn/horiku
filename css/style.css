@@ -9,6 +9,7 @@
     --dark-color: #161a2b;
     --light-color: #c0c3ce;
     --complementary-color: #5e5630;
+    --light-complementary-color: #9e9982;
 }
 
 * {
@@ -53,7 +54,7 @@ img {
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--light-complementary-color);
     height: 70px;
 }
 
@@ -135,7 +136,7 @@ img {
     bottom: -70px;
     right: 0;
     left: 0;
-    background: tan;
+    background: var(--light-complementary-color);
     transform: skewY(-2deg);
     -webkit-transform: skewY(-2deg);
     -moz-transform: skewY(-2deg);
