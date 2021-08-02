@@ -68,6 +68,10 @@
     background-color: var(--light-color);
     color: var(--complementary-color);
 }   
+.bg-complementary, .btn-complementary {
+    background-color: var(--light-complementary-color);
+    color: #fff;
+}   
 
 .text-center {
     text-align: center;
