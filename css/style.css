@@ -200,7 +200,13 @@ img {
     transform: translateY(-15px);
 }
 
-/* footer */
+/* Features */
+.features-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+
+/* Footer */
 
 .footer .social a {
     margin: 0 10px;
