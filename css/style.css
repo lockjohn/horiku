@@ -108,6 +108,10 @@ pre {
     overflow: visible;
 }
 
+.showcase-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -117,6 +121,7 @@ pre {
     width: 400px;
     padding: 40px;
     z-index: 100;
+    animation: slideInFromRight 1s ease-in;
     /* justify-self: flex-end;     */
 }
 
@@ -157,6 +162,7 @@ pre {
 /* Stats */
 .stats {
     padding-top: 100px;  
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -265,6 +271,47 @@ align-items: flex-start;
     margin: 0 10px;
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(+100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* Tablets and under */
 @media(max-width: 768px) {
     .grid,
@@ -285,11 +332,13 @@ align-items: flex-start;
     .showcase-text {
         text-align: center;
         margin-top: 40px;
+        animation: slideInFromTop 1s ease-in;
     }
 
     .showcase-form {
         justify-self: center;
         margin: auto;
+        animation: slideInFromBottom 1s ease-in;
     }
 
     .cli .grid > *:first-child, 
