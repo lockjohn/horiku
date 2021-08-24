@@ -51,6 +51,29 @@
     font-size: 4rem;
 }
 
+/* text colors */
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+    
+}   
+
+.text-dark {
+    color: var(--dark-color);
+    
+}   
+.text-light {
+    color: var(--light-color);
+    
+}   
+.text-complementary {
+    color: var(--light-complementary-color);
+}  
+
 /* Backgrounds & colored buttons */
 .bg-primary, .btn-primary {
     background-color: var(--primary-color);
@@ -73,8 +96,40 @@
     color: #fff;
 }   
 
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
 .text-center {
     text-align: center;
+}
+
+
+/* Alert */
+.alert {
+    background-color:  var(--light-complementary-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--errord-color);
+    color: #fff;
 }
 
 .flex {
