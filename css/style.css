@@ -4,12 +4,12 @@
 /* defining a variable in the 'root' scope  */
 :root {
     /* --primary-color: #047aed; */
-    --primary-color: #30385e;
-    --secondary-color: #272e4d;
-    --dark-color: #161a2b;
-    --light-color: #c0c3ce;
-    --complementary-color: #5e5630;
-    --light-complementary-color: #9e9982;
+    --primary-color: #621f69;
+    --secondary-color: #78d7d7;
+    --dark-color: #4A164A;
+    --light-color: #ECB22E;
+    --complementary-color:#BF1D3D;
+    --light-complementary-color: #F6EFE8;
     --success-color: #5cb85c;
     --error-color: red;
 
@@ -87,6 +87,52 @@ pre {
     justify-content: space-between;
 }
 
+/* Showtime */
+.showtime {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background: var(--primary-color) url(images/cover.png) no-repeat center center/cover;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+}
+.showtime-text {
+    z-index: 10;
+    animation: slideInFromTop 1s ease-in;
+}
+
 /* Showcase */
 .showcase {
     background-color: var(--primary-color);
@@ -122,7 +168,7 @@ pre {
     padding: 40px;
     z-index: 100;
     animation: slideInFromRight 1s ease-in;
-    /* justify-self: flex-end;     */
+    justify-self: flex-end;    
 }
 
 .showcase-form .form-control {
@@ -145,7 +191,7 @@ pre {
 
 .showcase::before, 
 .showcase::after {
-    content: 'this is where the content would go'; 
+    content: ''; 
     /* to use these pseudo classes, req this property, but leaving blank */
     position: absolute;
     height: 100px;
@@ -328,6 +374,8 @@ align-items: flex-start;
     .showcase {
         height: auto;
     }
+    
+  
 
     .showcase-text {
         text-align: center;
@@ -335,11 +383,17 @@ align-items: flex-start;
         animation: slideInFromTop 1s ease-in;
     }
 
+    .showcase-text p {
+        max-width: 100%;
+        justify-self: center;
+    }
+
     .showcase-form {
         justify-self: center;
         margin: auto;
         animation: slideInFromBottom 1s ease-in;
     }
+
 
     .cli .grid > *:first-child, 
     .features-main .grid > *:first-child,
